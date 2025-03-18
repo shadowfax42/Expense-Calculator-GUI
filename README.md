@@ -38,8 +38,3 @@ To run this project, you need the following:
   - `matplotlib` (for chart visualization)
   - `csv` (for file operations)
   - `fpdf` (for PDF export)
-
-You can install the required libraries using pip:
-
-```bash
-pip install matplotlib fpdf
