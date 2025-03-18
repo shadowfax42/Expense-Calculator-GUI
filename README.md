@@ -1,6 +1,6 @@
 # Profit Calculator GUI
 
-The **Profit Calculator GUI** is a Python-based application built with `tkinter` for calculating and visualizing profit margins based on various expenses and customer payments. It includes features like expense tracking, profit calculation, history management, and chart visualization. The application also supports light and dark themes for better user experience.
+The **Profit Calculator GUI** is a Python-based desktop application built with `tkinter` for calculating and visualizing profit margins based on various expenses and customer payments. It provides an intuitive interface for users to input expenses, calculate profits, and view historical data. The application also supports light and dark themes for better user experience.
 
 ---
 
@@ -11,19 +11,20 @@ The **Profit Calculator GUI** is a Python-based application built with `tkinter`
   - Automatic calculation of gross expenses, net profit, and profit margin.
 
 - **History Management**:
-  - View and manage calculation history.
-  - Export history to a CSV file.
-  - Clear history with a single click.
+  - View and manage calculation history in a table format.
+  - Export the entire history to a CSV file.
+  - Clear all history entries with a single click.
 
 - **Chart Visualization**:
-  - Pie chart for expense breakdown.
-  - Bar chart for gross expenses vs. net profit.
+  - **Pie Chart**: Breakdown of expenses (gear, travel, hotel, payroll, other).
+  - **Bar Chart**: Comparison of gross expenses and net profit.
 
 - **Themes**:
-  - Toggle between light and dark modes.
+  - Toggle between **Light Mode** and **Dark Mode** using a switch in the header.
 
 - **File Operations**:
-  - Save current calculation data to a CSV file.
+  - Save the current calculation data to a CSV file.
+  - Export the history to a PDF file.
 
 ---
 
@@ -31,23 +32,14 @@ The **Profit Calculator GUI** is a Python-based application built with `tkinter`
 
 To run this project, you need the following:
 
-- Python 3.x
-- Libraries:
+- **Python 3.x**
+- **Libraries**:
   - `tkinter` (included with Python)
   - `matplotlib` (for chart visualization)
   - `csv` (for file operations)
+  - `fpdf` (for PDF export)
 
+You can install the required libraries using pip:
 
-## File Structure
-
-profit-calculator-gui/
-├── main.py                # Entry point of the application
-├── profit_calculator.py   # Main application logic
-├── theme_manager.py       # Handles theme-related functionality
-├── history_manager.py     # Manages history-related functionality
-├── file_manager.py        # Handles file operations
-├── chart_manager.py       # Manages chart creation and updates
-├── README.md              # Project documentation
-├── screenshots/           # Folder for application screenshots
-│   ├── light_mode.png     # Screenshot of the app in light mode
-│   └── dark_mode.png      # Screenshot of the app in dark mode
+```bash
+pip install matplotlib fpdf
