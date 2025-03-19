@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import messagebox, ttk, filedialog
 import csv
 import os
-from fpdf import FPDF
 
 
 class HistoryManager:

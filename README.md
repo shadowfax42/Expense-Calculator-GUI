@@ -4,6 +4,12 @@ The **Profit Calculator GUI** is a Python-based desktop application built with `
 
 ---
 
+## Story Behind the Project
+
+My partner runs a small media company, and I noticed that he was using his phone calculator to prepare most of his quotes. I thought a dedicated desktop application could help streamline his workflow, making it easier to manage project costs and keep track of quotes for video and photo shoots. This application was designed to provide a more efficient and organized way to handle pricing and profitability calculations.
+
+---
+
 ## Features
 
 - **Expense Calculation**:
@@ -12,7 +18,8 @@ The **Profit Calculator GUI** is a Python-based desktop application built with `
 
 - **History Management**:
   - View and manage calculation history in a table format.
-  - Export the entire history to a CSV file.
+  - Save history entries to a CSV file.
+  - Save history entries to a PDF file.
   - Clear all history entries with a single click.
 
 - **Chart Visualization**:
@@ -38,3 +45,18 @@ To run this project, you need the following:
   - `matplotlib` (for chart visualization)
   - `csv` (for file operations)
   - `fpdf` (for PDF export)
+
+---
+
+## Running the Application
+
+To create the executable file, use the following command:
+
+```
+python -m PyInstaller main.py --onefile -w
+```
+
+The compiled version of the Tkinter application can be found in `dist/main.exe`. Simply double-click `main.exe` to launch the Profit Calculator GUI without needing to install Python or dependencies.
+
+Sample output files can be found in the `output` folder.
+
