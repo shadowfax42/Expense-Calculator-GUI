@@ -53,7 +53,7 @@ To run this project, you need the following:
 To create the executable file, use the following command:
 
 ```
-python -m PyInstaller main.py --onefile -w
+python -m PyInstaller main.py --onefile -w --icon=images\zm.ico
 ```
 
 The compiled version of the Tkinter application can be found in `dist/main.exe`. Simply double-click `main.exe` to launch the Profit Calculator GUI without needing to install Python or dependencies.
